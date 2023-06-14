@@ -1,0 +1,48 @@
+.foods {
+    padding: 8rem;
+
+    .food-section {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    .food {
+        @include flex;
+        gap: 12.6rem;
+
+        .info-section {
+            width: 60%;
+
+            h2 {
+                @include font_1(4.8rem, 600, 7.2rem);
+                font-family: 'Montserrat';
+                color: $primary-color;
+            }
+
+            p {
+                @include font_1;
+                padding: 2.4rem 0 0;
+                font-family: 'Inter';
+                color: $text-color;
+            }
+
+            button {
+                margin-top: 3.2rem;
+                @include font_2;
+                @include btnPadd;
+            }
+        }
+
+        .img-section {
+            width: 40%;
+            @include flex;
+            gap: 2.4rem;
+            align-items: start;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

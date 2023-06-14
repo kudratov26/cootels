@@ -1,0 +1,120 @@
+.contact {
+    padding: 8rem 0;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+}
+
+.left-section {
+    width: 50%;
+
+    h3 {
+        @include font_1(1.6rem, 500, 2.4rem);
+        font-family: 'Inter';
+        color: #424F7B;
+    }
+
+    h2 {
+        @include font_1(4.8rem, 600, 7.2rem);
+        font-family: 'Montserrat';
+        color: $primary-color;
+    }
+
+
+    p {
+        @include font_1;
+        padding: 2.4rem 0 0;
+        font-family: 'Inter';
+        color: $text-color;
+    }
+
+    .btn {
+        margin-top: 3.2rem;
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+
+        button {
+            @include font_2;
+            @include btnPadd;
+        }
+
+        a {
+            @include font_1(1.6rem, 500, 1.93rem);
+            color: $button;
+            font-family: 'Inter';
+        }
+    }
+}
+
+.accordion_box {
+    width: 50%;
+}
+
+.accordion>input {
+    display: none;
+}
+
+.accordion>label {
+    box-shadow: 0px 24px 48px rgba(230, 235, 245, 0.4);
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 3.2rem 3.6rem;
+    background-color: #fff;
+    @include accord-title;
+    color: $accord-title;
+}
+
+.accordion>label>.up {
+    display: none;
+}
+
+.accordion_content {
+    box-shadow: 0px 24px 48px rgba(230, 235, 245, 0.4);
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+    margin-bottom: 16px;
+
+    @include accord-text;
+    color: #848FAC;
+}
+
+label>span {
+    display: flex;
+    align-items: start;
+
+    img {
+        padding: .8rem;
+        background-color: #FFECE2;
+        border-radius: 50%;
+    }
+}
+
+.accordion>input:checked~.accordion_content {
+    max-height: 150px;
+    padding: 0 24px 24px 24px;
+    background-color: #fff;
+}
+
+.accordion>input:checked~label>.up {
+    display: flex;
+    align-items: start;
+
+    img {
+        padding: .8rem;
+        background-color: #FF620A;
+        border-radius: 50%;
+    }
+}
+
+.accordion>input:checked~label>span {
+    display: none;
+}

@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+nav .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.6rem;
+}
+nav .nav__logo {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.9rem;
+  font-family: "Montserrat";
+  color: nav .nav__logo primary-color;
+}
+nav .nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  gap: 3.2rem;
+}
+nav .nav__menu a {
+  color: #192252;
+}
+nav .nav__btn button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #0E1734;
+}
+
+.hero {
+  padding: 8rem;
+}
+.hero .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+.hero .hero-section .info-section {
+  width: 50%;
+}
+.hero .hero-section .info-section h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+  font-family: "Montserrat";
+  color: #192252;
+}
+.hero .hero-section .info-section p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding: 2.4rem 0 3.2rem;
+  font-family: "Inter";
+  color: #848FAC;
+}
+.hero .hero-section .info-section button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #0E1734;
+}
+.hero .hero-section .img-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  align-items: start;
+}
+.hero .hero-section .img-section img {
+  width: 100%;
+}
+.hero .hero-section .img-section img:nth-child(2) {
+  padding-top: 8rem;
+}
+
+.hotels {
+  padding: 8rem;
+}
+.hotels .hotel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12.6rem;
+}
+.hotels .hotel .info-section {
+  width: 50%;
+}
+.hotels .hotel .info-section h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+  font-family: "Montserrat";
+  color: #192252;
+}
+.hotels .hotel .info-section p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding: 2.4rem 0 0;
+  font-family: "Inter";
+  color: #848FAC;
+}
+.hotels .hotel .info-section p:nth-child(2) {
+  padding-top: 1.6rem;
+}
+.hotels .hotel .info-section button {
+  margin-top: 3.2rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #0E1734;
+}
+.hotels .hotel .img-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  align-items: start;
+}
+.hotels .hotel .img-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.foods {
+  padding: 8rem;
+}
+.foods .food-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.foods .food {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12.6rem;
+}
+.foods .food .info-section {
+  width: 60%;
+}
+.foods .food .info-section h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+  font-family: "Montserrat";
+  color: #192252;
+}
+.foods .food .info-section p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding: 2.4rem 0 0;
+  font-family: "Inter";
+  color: #848FAC;
+}
+.foods .food .info-section button {
+  margin-top: 3.2rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #0E1734;
+}
+.foods .food .img-section {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  align-items: start;
+}
+.foods .food .img-section img {
+  width: 100%;
+}
+
+.contact {
+  padding: 8rem 0;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+
+.left-section {
+  width: 50%;
+}
+.left-section h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-family: "Inter";
+  color: #424F7B;
+}
+.left-section h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+  font-family: "Montserrat";
+  color: #192252;
+}
+.left-section p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding: 2.4rem 0 0;
+  font-family: "Inter";
+  color: #848FAC;
+}
+.left-section .btn {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.left-section .btn button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #0E1734;
+}
+.left-section .btn a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.93rem;
+  color: #0E1734;
+  font-family: "Inter";
+}
+
+.accordion_box {
+  width: 50%;
+}
+
+.accordion > input {
+  display: none;
+}
+
+.accordion > label {
+  box-shadow: 0px 24px 48px rgba(230, 235, 245, 0.4);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 3.2rem 3.6rem;
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 150%;
+  text-align: center;
+  color: #424F7B;
+}
+
+.accordion > label > .up {
+  display: none;
+}
+
+.accordion_content {
+  box-shadow: 0px 24px 48px rgba(230, 235, 245, 0.4);
+  border-radius: 0 0 10px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848FAC;
+}
+
+label > span {
+  display: flex;
+  align-items: start;
+}
+label > span img {
+  padding: 0.8rem;
+  background-color: #FFECE2;
+  border-radius: 50%;
+}
+
+.accordion > input:checked ~ .accordion_content {
+  max-height: 150px;
+  padding: 0 24px 24px 24px;
+  background-color: #fff;
+}
+
+.accordion > input:checked ~ label > .up {
+  display: flex;
+  align-items: start;
+}
+.accordion > input:checked ~ label > .up img {
+  padding: 0.8rem;
+  background-color: #FF620A;
+  border-radius: 50%;
+}
+
+.accordion > input:checked ~ label > span {
+  display: none;
+}

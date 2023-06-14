@@ -1,0 +1,46 @@
+@mixin flex($jc: flex-start) {
+    display: flex;
+    align-items: center;
+    justify-content: $jc;
+}
+
+@mixin font_1($fs: 1.8rem, $fw: 400, $lh: 2.7rem) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+
+@mixin padding {
+    padding: 8rem 0;
+}
+
+@mixin font_2 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin btnPadd {
+    padding: 1.6rem 3.2rem;
+    border-radius: .4rem;
+    color: #fff;
+    background-color: $button;
+}
+
+@mixin accord-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 150%;
+
+    text-align: center;
+}
+
+@mixin accord-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}

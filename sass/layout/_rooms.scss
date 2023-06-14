@@ -1,0 +1,62 @@
+.rooms-info {
+    @include padding;
+    text-align: center;
+
+    h2 {
+        @include font_h2;
+        letter-spacing: -0.01em;
+    }
+
+    p {
+        @include font_1;
+        font-family: 'Inter';
+        color: $text-color;
+        padding: 2.4rem 0 3.2rem
+    }
+
+    button {
+        @include font_2;
+        @include btnPadd;
+    }
+}
+
+.cards {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.card {
+    width: 33.3%;
+
+    .card-img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.card-info {
+    padding-top: 3.2rem;
+
+
+    h2 {
+        @include font_1(24px, 600, 36px);
+        font-family: 'Montserrat';
+        color: #000000;
+    }
+
+    p {
+        @include font_1;
+        font-family: 'Inter';
+        color: $text-color;
+        padding: 1.6rem 0 3.2rem;
+    }
+
+    a {
+        @include font_1;
+        font-family: 'Inter';
+        color: #424F7B;
+        display: flex;
+        gap: 1.5rem;
+    }
+}

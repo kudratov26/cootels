@@ -174,6 +174,77 @@ nav .nav__btn button {
   height: 100%;
 }
 
+.rooms-info {
+  padding: 8rem 0;
+  text-align: center;
+}
+.rooms-info h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+  letter-spacing: -0.01em;
+}
+.rooms-info p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: "Inter";
+  color: #848FAC;
+  padding: 2.4rem 0 3.2rem;
+}
+.rooms-info button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: #0E1734;
+}
+
+.cards {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.card {
+  width: 33.3%;
+}
+.card .card-img img {
+  width: 100%;
+}
+
+.card-info {
+  padding-top: 3.2rem;
+}
+.card-info h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  font-family: "Montserrat";
+  color: #000000;
+}
+.card-info p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: "Inter";
+  color: #848FAC;
+  padding: 1.6rem 0 3.2rem;
+}
+.card-info a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: "Inter";
+  color: #424F7B;
+  display: flex;
+  gap: 1.5rem;
+}
+
 .foods {
   padding: 8rem;
 }
@@ -359,4 +430,15 @@ label > span img {
 
 .accordion > input:checked ~ label > span {
   display: none;
+}
+
+footer {
+  background-color: #0B265A;
+}
+footer .logo {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.9rem;
+  font-family: "Montserrat";
+  color: footer .logo primary-color;
 }

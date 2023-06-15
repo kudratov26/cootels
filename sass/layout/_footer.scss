@@ -1,9 +1,60 @@
 footer {
     background-color: #0B265A;
+    padding: 12rem 0;
 
-    .logo {
-        @include font_1(3.2rem, 600, 3.9rem);
-        font-family: 'Montserrat';
-        color: &primary-color;
+    .footer-section {
+        @include flex;
+        align-items: start;
+        justify-content: space-between;
+
+        .left-side {
+            .logo {
+                @include font_1(3.2rem, 700, 3.9rem);
+                font-family: 'Montserrat';
+                color: #fff;
+            }
+
+            p {
+                @include font_1(16px, 400, 28px);
+                font-family: 'Inter';
+                color: $text-color;
+                padding: 1.3rem 0 3.6rem;
+            }
+
+            .social {
+                display: flex;
+                gap: 2.4rem;
+            }
+
+        }
+
+        .right-side {
+            display: flex;
+
+            ul:nth-child(2) {
+                padding: 0 14rem 0 10rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 2.4rem
+            }
+
+            li:first-child {
+                a {
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+            }
+
+            a {
+                @include font_1(1.6rem, 400, 1.9rem);
+                font-family: 'Inter';
+                color: $text-color;
+            }
+        }
     }
+
 }

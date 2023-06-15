@@ -245,6 +245,50 @@ nav .nav__btn button {
   gap: 1.5rem;
 }
 
+.testimonial {
+  padding: 8rem 0;
+}
+
+.testimon-section {
+  text-align: center;
+}
+.testimon-section h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+}
+.testimon-section img {
+  padding: 6.2rem 0 4.4rem;
+}
+.testimon-section p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: "Inter";
+  color: #848FAC;
+}
+.testimon-section h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  padding: 4rem 0 0;
+  font-family: "Inter";
+  font-style: normal;
+  color: #192252;
+}
+.testimon-section .pages {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.testimon-section .pages img {
+  display: inline;
+}
+
 .foods {
   padding: 8rem;
 }
@@ -434,11 +478,54 @@ label > span img {
 
 footer {
   background-color: #0B265A;
+  padding: 12rem 0;
 }
-footer .logo {
+footer .footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .footer-section .left-side .logo {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 3.9rem;
   font-family: "Montserrat";
-  color: footer .logo primary-color;
+  color: #fff;
+}
+footer .footer-section .left-side p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: "Inter";
+  color: #848FAC;
+  padding: 1.3rem 0 3.6rem;
+}
+footer .footer-section .left-side .social {
+  display: flex;
+  gap: 2.4rem;
+}
+footer .footer-section .right-side {
+  display: flex;
+}
+footer .footer-section .right-side ul:nth-child(2) {
+  padding: 0 14rem 0 10rem;
+}
+footer .footer-section .right-side ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+footer .footer-section .right-side li:first-child a {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+footer .footer-section .right-side a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  font-family: "Inter";
+  color: #848FAC;
 }
